@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volvox</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+  <header>
+    <div class="header-home">
+      <%= link_to 'Timebox', root_path %>
+      <%= form_tag search_path  do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "search", :name => nil%>
+      </p>
+      <% end %>
+    </div>
+  </div>
+  </header>
+
+  <article>
+    <%= yield %>
+  </article>
+</body>
+</html>

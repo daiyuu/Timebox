@@ -1,0 +1,12 @@
+<div class="top-contents-wrapper">
+  <% @contents.each do |content| %>
+    <div class="top-contents">
+      <div class="thumbnail">
+        <%= link_to thumbnail_for(content), content.url %>
+      </div>
+      <div class="intro">
+        <%= link_to content.title.truncate(30), content.url %>
+      </div>
+    </div>
+  <% end %>
+</div>
