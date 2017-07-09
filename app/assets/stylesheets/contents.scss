@@ -2,42 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.top-contents-wrapper{
-  margin: 0 20%;
-  height: 100%;
+  .top-contents{
+    border-bottom: 1px dotted #000000;
+    margin: 20px;
+    height: 100px;
+  }
+  .top-contents a{
+    float: left;
+  }
+  .thumbnail a{
+    padding-right: 30px;
+  }
+  .intro a{
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #6E6E6E;
+  }
+
+@media (min-width: 768px) and (max-width: 1000px){
+  .intro a{
+    font-size: 12px;
+  }
 }
-.top-contents{
-  border-bottom: 1px dotted #000000;
-  margin: 20px;
-  height: 100px;
-}
-.top-contents a{
-  float: left;
-}
-.thumbnail a{
-  padding-right: 30px;
-}
-.intro a{
-  font-size: 20px;
-  margin-top: 30px;
-  text-decoration: none;
-  color: #6E6E6E;
+
+@media (min-width: 600px) and (max-width: 767px){
+  .intro a{
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 599px){
-  .top-contents-wrapper{
-    margin: 10px;
-  }
   .top-contents{
-    height: 80px;
-    margin: 5px 10px;
   }
   .intro a{
-    font-size: 8px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-
+    font-size: 15px;
+    width: 70%;
+    margin-top: 20px;
   }
 }

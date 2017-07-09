@@ -7,4 +7,6 @@ class Content < ActiveRecord::Base
     end
   end
 
+
+
 end

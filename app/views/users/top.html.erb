@@ -1,0 +1,18 @@
+<div class="profile">
+  <div class="user-thumbnail">
+    <%= image_tag('6151yzyTXlL._SX355_.jpg', {:width => "150", :height => "100"}) %>
+  </div>
+    <div class="user-detail">
+      <p><%= current_user.name %></p>
+      <p><%= current_user.email %></p>
+      <p>メディアに革命を起こします。</p>
+    </div>
+  <div class="link">
+    <%= link_to 'プロフィール編集', edit_user_registration_path %>
+  </div>
+  <% if admin_user? %>
+    <div class="manual-crawl">
+      <%= link_to 'クローリング', crawl_path %>
+    </div>
+  <% end %>
+</div>

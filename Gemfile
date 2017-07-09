@@ -48,6 +48,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'nokogiri'
-  gem 'anemone'
   gem 'hirb'
+  gem 'kaminari'
+  gem 'devise'
 end
