@@ -24,7 +24,7 @@
   </article>
 
   <footer>
-    <% if current_user %>
+    <% if user_signed_in? %>
       <%= link_to current_user.name, profile_path %>
     <% else %>
       <%= link_to 'ログイン', new_user_session_path %>
