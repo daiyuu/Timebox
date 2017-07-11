@@ -5,7 +5,8 @@ class ContentsController < ApplicationController
 
 
   def index
-    @contents = Content.page(params[:page]).per(100)
+    @contents = Content.order(created_at: :desc)
+    @contents = @contents.page(params[:page]).per(100)
   end
 
   def search

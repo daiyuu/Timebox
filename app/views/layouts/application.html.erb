@@ -22,13 +22,6 @@
   <article>
     <%= yield %>
   </article>
-
-  <footer>
-    <% if user_signed_in? %>
-      <%= link_to current_user.name, profile_path %>
-    <% else %>
-      <%= link_to 'ログイン', new_user_session_path %>
-    <% end %>
-  </footer>
+  
 </body>
 </html>
