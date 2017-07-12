@@ -6,18 +6,19 @@ class ContentsController < ApplicationController
 
   def index
     @contents = Content.order(created_at: :desc)
-    @contents = @contents.page(params[:page]).per(100)
+    @contents = @contents.page(params[:page]).per(50)
   end
 
   def search
     @contents = Content.search(params[:search])
-    @contents = @contents.page(params[:page]).per(100)
+    @contents = @contents.page(params[:page]).per(50)
     render :index
   end
 
   def crawl
     @contents = Content.all
     matome
+    gigazine
 
     redirect_to profile_path
   end

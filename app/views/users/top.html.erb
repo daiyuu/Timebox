@@ -7,12 +7,12 @@
       <p><%= current_user.email %></p>
       <p>メディアに革命を起こします。</p>
     </div>
+    
   <div class="link">
     <%= link_to 'プロフィール編集', edit_user_registration_path %>
   </div>
-  <% if admin_user? %>
-    <div class="manual-crawl">
-      <%= link_to 'クローリング', crawl_path %>
-    </div>
-  <% end %>
+
+  <div class="manual-crawl">
+    <%= link_to 'クローリング', crawl_path %>
+  </div>
 </div>
