@@ -11,10 +11,14 @@ Rails.application.routes.draw do
 
   get 'about' => 'home#about'
 
+  resources :contents, only: [:show]
   get 'search' => 'contents#search'
   post 'search' => 'contents#search'
 
   get 'crawl' => 'contents#crawl'
+  get 'crash' => 'contents#crash'
+  get 'crasher' => 'contents#crasher'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

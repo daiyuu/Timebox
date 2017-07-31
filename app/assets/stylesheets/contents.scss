@@ -1,7 +1,23 @@
 // Place all the styles related to the contents controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+  .wrapper{
+    margin-top: 30px;
+  }
 
+  .show{
+    margin-bottom: 100px;
+    border: solid 1px #E6E6E6;
+    background-color: #424242;
+    height: 500px;
+  }
+  .recommend{
+    float: left;
+    width: 33%;
+    border: solid 1.5px #E6E6E6;
+    height: 240px;
+    background-color: #585858;
+  }
   .top-contents{
     border-bottom: 1px dotted #000000;
     margin: 20px;
@@ -13,31 +29,74 @@
   .thumbnail a{
     padding-right: 30px;
   }
+  .show-thumbnail{
+  }
+  .show-thumbnail img{
+    width: 100%;
+    height: 450px;
+  }
+  .rec-thumbnail{
+    margin: 0;
+  }
+  .rec-thumbnail img{
+    height: 180px;
+  }
   .intro a{
+    width: 70%;
     font-size: 20px;
-    margin-top: 30px;
     text-decoration: none;
     color: #6E6E6E;
+    margin: 20px 0;
   }
+  .show-title{
+    font-size: 25px;
+    height: 40px;
+  }
+  .show-title a{
+    color: #E6E6E6;
+    width: 100%;
+  }
+  .rec-title{
+  }
+  .rec-title a{
+    color: #E6E6E6;
+  }
+  .pager{
+    margin: 30px 0;
+  }
+
 
 @media (min-width: 768px) and (max-width: 1000px){
   .intro a{
-    font-size: 12px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 767px){
   .intro a{
-    font-size: 10px;
   }
 }
 
 @media (max-width: 599px){
-  .top-contents{
+  .wrapper{
+    margin-top: 10px;
+  }
+  .show{
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .show-thumbnail img{
+    height: 250px;
+  }
+  .show-title{
+  }
+  .show-title a{
+    font-size: 15px;
+  }
+  .recommend{
+    width: 49%;
+    height: 240px;
   }
   .intro a{
-    font-size: 15px;
-    width: 70%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }

@@ -1,18 +1,16 @@
 <div class="profile">
   <div class="user-thumbnail">
-    <%= image_tag('6151yzyTXlL._SX355_.jpg', {:width => "150", :height => "100"}) %>
-  </div>
-    <div class="user-detail">
-      <p><%= current_user.name %></p>
-      <p><%= current_user.email %></p>
-      <p>メディアに革命を起こします。</p>
-    </div>
-    
-  <div class="link">
-    <%= link_to 'プロフィール編集', edit_user_registration_path %>
-  </div>
 
-  <div class="manual-crawl">
-    <%= link_to 'クローリング', crawl_path %>
+  </div>
+  <div class="user-detail">
+    <p><%= current_user.name %></p>
+    <p><%= current_user.email %></p>
+    <p>"馬鹿で頑固で夢想家"</p>
+  </div>
+  <div class="manual-link">
+    <p><%= link_to 'Crawl', crawl_path %></p>
+    <p><%= link_to 'Crash', crash_path %></p>
+    <p><%= link_to 'Crasher', crasher_path %>※全部削除</p>
+    <p>記事数：<span><%= link_to Content.count, root_path %></span>個</p>
   </div>
 </div>

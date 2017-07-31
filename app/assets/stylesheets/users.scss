@@ -3,7 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .profile{
-  border: solid 1px #000000;
+  border: solid 1px #000;
+  border-radius: 50px;
   margin: 30px;
   padding: 20px;
+}
+.manual-link p a{
+  color: #0A1B2A;
+}
+.manual-link p span a{
+  color: #0040FF;
 }

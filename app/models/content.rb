@@ -1,4 +1,5 @@
 class Content < ActiveRecord::Base
+
   def self.search(search)
     if search
       Content.where(['title LIKE ?', "%#{search}%"])
@@ -6,6 +7,8 @@ class Content < ActiveRecord::Base
       Content.all
     end
   end
+
+  
 
 
 

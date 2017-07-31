@@ -2,12 +2,14 @@
   <% @contents.each do |content| %>
     <div class="top-contents">
       <div class="thumbnail">
-        <%= link_to thumbnail_for(content), content.url %>
+        <%= link_to thumbnail_for(content), content_path(content.id) %>
       </div>
       <div class="intro">
-        <%= link_to content.title.truncate(30), content.url %>
+        <%= link_to content.title.truncate(35), content_path(content.id) %>
       </div>
     </div>
   <% end %>
-  <%= paginate @contents %>
+  <div class="pager">
+    <%= paginate @contents %>
+  </div>
 </div>
