@@ -59,3 +59,7 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+
+server '13.113.227.48', user: 'daiyuu', roles: %w{app db web}
+set :ssh_options, keys: '~/.ssh/timebox_key_rsa'
